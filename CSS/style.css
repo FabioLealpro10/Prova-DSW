@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    
+}
+
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+.pesquisa {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para os elementos de pesquisa e filtro */
+.pesquisa input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesquisa select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesquisa button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para os cards de produtos */
+.card {
+    background-color: white;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+#listaEventos {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+/* Estilos para o formulário de cadastro */
+.formulario {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+
+    padding: 0.5rem;
+
+    border: 1px solid #ccc;
+
+    border-radius: 0.3rem;
+
+    resize: none;
+
+    min-height: 5rem;
+
+    font-family: inherit;
+
+}
+.formulario button {
+    padding: 10px;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #1e8449;
+}
+
+.listagem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/*Responsividade*/
+
+/*celular*/
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .pesquisa {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pesquisa button {
+        width: 100%;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+}
+
