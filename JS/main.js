@@ -67,7 +67,7 @@ pesquisar_titulo.addEventListener("input", function (){
         if (dados.titulo.includes(titulo)){
             dados_pesquisados.push(dados)
         }
-        henderizar_eventos(dados_pesquisados)
+        listar_eventos(dados_pesquisados)
 
    
     });
