@@ -58,8 +58,8 @@ function listar_eventos(dados_eventos) {
 }
 
 
-const pesquisar_titulo = document.getElementById('inputPesquisa')
-pesquisar_titulo.addEventListener("input", function (){
+const pesquisar_titulo = document.getElementById('btnPesquisar')
+pesquisar_titulo.addEventListener("click", function (){
      let titulo = document.getElementById('titulo').value
 
      let dados_pesquisados = []
